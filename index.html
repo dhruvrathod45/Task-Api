@@ -656,7 +656,7 @@ async function handleAddTask() {
 
   setBtnLoad('add-btn', 'Adding...');
   try {
-    const res  = await fetch(`${API}/tasks`, {
+    const res  = await fetch(`${API}/api/tasks`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
       body: JSON.stringify({ title, description, status })
@@ -720,7 +720,7 @@ async function handleSaveEdit() {
 /* ─── CORE PATCH (shared by toggle + edit save) ─── */
 async function patchTask(id, body) {
   try {
-    const res  = await fetch(`${API}/tasks/${id}`, {
+    const res  = await fetch(`${API}/api/tasks/${id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
       body: JSON.stringify(body)
