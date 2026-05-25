@@ -147,16 +147,6 @@ DELETE /api/tasks/:id
 
 ---
 
-## 📸 Screenshots
-
-Add project screenshots here later.
-
-Example:
-
-
-
----
-
 ## 🎯 Future Improvements
 
 - Due Dates
